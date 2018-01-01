@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Aide Pharmacie</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Aide aux phramaciens</h1>
+
+
+    <div id="conteneur">
+        <div>
+            <p>Ce médicament est à prendre:</p>
+        </div>
+
+        <div>
+            <p>
+                <input type="checkbox" name="moment" id="matin" /> <label for="matin">Matin</label><br>
+                <input type="checkbox" name="moment" id="midi" /> <label for="midi">Midi</label><br>
+                <input type="checkbox" name="moment" id="soir" /> <label for="soir">Soir</label><br>
+            </p>
+        </div>
+        
+        <div>
+            <p>par voie</p>
+        </div>
+        <div>
+            <p>
+                <input type="radio" name="voie" value="veineuse" id="veineuse" /> <label for="veineuse">Veineuse</label><br>
+                <input type="radio" name="voie" value="intramusculaire" id="intramusculaire" /> <label for="intramusculaire">Intramusculaire</label><br>
+                <input type="radio" name="voie" value="sous-cutannée" id="sous-cutannée" /> <label for="sous-cutannée">Sous-cutannée</label><br>
+                <input type="radio" name="voie" value="orale" id="orale" /> <label for="orale">Orale</label><br>
+                <input type="radio" name="voie" value="rectale" id="rectale" /> <label for="rectale">Rectale</label><br>
+            </p>
+        </div>
+
+        <div>
+            <p>
+                <input type="radio" name="position_repas" value="avant le repas" id="avant_repas" /> <label for="avant_repas">Avant le repas</label><br>
+                <input type="radio" name="position_repas" value="après le repas" id="apres_repas" /> <label for="apres_repas">Après le repas</label><br>
+                <input type="radio" name="position_repas" value="" id="peu_importe" /> <label for="peu_importe">Peu importe</label><br>
+            </p>
+        </div>
+
+    </div>
+
+
+
+
+</body>
+
+
+<script src="http://code.responsivevoice.org/responsivevoice.js"></script>
+<script src="speech.js"></script>
+
+</html>

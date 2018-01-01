@@ -1,0 +1,13 @@
+#conteneur{
+    display: flex;
+    flex-direction: row;
+    border: SOLID red 2px;
+    align-items: center;
+}
+
+div{
+    padding: 0.5em;
+}
+
+
+
