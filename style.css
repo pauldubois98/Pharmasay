@@ -1,13 +1,48 @@
-#conteneur{
-    display: flex;
-    flex-direction: row;
-    border: SOLID red 2px;
-    align-items: center;
-}
-
 div{
     padding: 0.5em;
+    /*border: RED 2px SOLID;*/
+}
+
+p{
+    font-weight: bold;
 }
 
 
 
+.img{
+    width: 30%;
+}
+
+
+#dire{
+    width: 4em;
+    height: 1.7em;
+    font-size: 1.5em;
+    color: white;
+    background-color: red;
+}
+
+#top{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#form{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#bottom{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#space{
+    height: 5em;
+}

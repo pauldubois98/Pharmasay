@@ -5,13 +5,19 @@
     <meta charset="utf-8">
     <title>Aide Pharmacie</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="img/logo.png" />
 </head>
 
 <body>
-    <h1>Aide aux phramaciens</h1>
+    <div class="conteneur" id='top'>
+        <img class='img' src="img/topL.png" alt="top left img">
+        <div><h1>Aide aux phramaciens</h1></div>
+        <img class='img' src="img/topR.png" alt="top right img">
+
+    </div>
 
 
-    <div id="conteneur">
+    <div class="conteneur" id="form">
         <div>
             <p>Ce médicament est à prendre:</p>
         </div>
@@ -34,6 +40,7 @@
                 <input type="radio" name="voie" value="sous-cutannée" id="sous-cutannée" /> <label for="sous-cutannée">Sous-cutannée</label><br>
                 <input type="radio" name="voie" value="orale" id="orale" /> <label for="orale">Orale</label><br>
                 <input type="radio" name="voie" value="rectale" id="rectale" /> <label for="rectale">Rectale</label><br>
+                <input type="radio" name="voie" value="" id="none" /> <label for="none">Non-spécifié</label><br>
             </p>
         </div>
 
@@ -47,6 +54,16 @@
         
         <div><button id="dire">Dire</button></div>
 
+    </div>
+
+    <div id='bottom'>
+        <img alt="parm" src="img/phram.png">
+    </div>
+
+    <div id='space'></div>
+
+    <div id='bottom'>
+        <p>Built with <span style="color: red">❤</span> by Paul Dubois</p>
     </div>
 
 

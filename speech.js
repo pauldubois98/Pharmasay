@@ -23,9 +23,12 @@ btDire.addEventListener("click", function (e) {
     }
     if (document.getElementById("soir").checked) {
         tot = tot + 1;
-
     }
+
     //making the sentence
+    if(tot===1){
+        say = say + "le ";
+    }
     if (document.getElementById("matin").checked) {
         //console.log("matin");
         say = say + "matin, ";
@@ -50,7 +53,7 @@ btDire.addEventListener("click", function (e) {
     
     var voieEle = document.getElementsByName("voie");
     for (var i = 0; i < voieEle.length; i++) {
-        if (voieEle[i].checked) {
+        if (voieEle[i].checked && voieEle[i].value!="") {
             say = say + "par voie " + voieEle[i].value
         }
         
