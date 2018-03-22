@@ -1,60 +1,94 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
 
 <head>
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS: materialize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- My stuff -->
     <meta charset="utf-8">
     <title>Aide Pharmacie</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="img/logo.png" />
+
 </head>
 
 <body>
-    <div class="conteneur" id='top'>
-        <img class='img' src="img/topL.png" alt="top left img">
-        <div><h1>Aide aux phramaciens</h1></div>
-        <img class='img' src="img/topR.png" alt="top right img">
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 
+    <!-- Nav menu -->
+    <nav class="red nav-extended">
+        <div class="nav-wrapper">
+            <a href="#!" class="brand-logo"><img class="logo" alt="logo" src="img/logo_blanc.png"></a>
+            <ul class="right">
+                <li><a href="index.html">Refresh</a></li>
+                <li><a href="mailto:pauldubois98@hotmail.com?subject=Feedback" class=""> Feedback </a></li>
+                <li><a href="https://pauldubois98.github.io/prgm.html" class=""> About </a></li>
+            </ul>
+        </div>
+        <div class="nav-content">
+            <span class="nav-title">Pharmasay</span>
+            <a class="btn-floating btn-large halfway-fab waves-effect waves-light red accent-4" href="mailto:?subject=Try%20this%20web%20app!&amp;body=This%20web%20app%20is%20quite%20fun!%20Try%20it%20out!%0Ahttps%3A%2F%2Fpauldubois98.github.io%2Fpharmasay">
+                <i class="material-icons">share</i>
+            </a>
+        </div>
+    </nav>
+    <div style="height: 5em" class=""></div>
+
+    <div class="row">
+        <div class="col s6"><img class='left img' src="img/topL.png" alt="top left img"></div>
+        <div class="col s6"><img class='right img' src="img/topR.png" alt="top right img"></div>
     </div>
 
-
-    <div class="conteneur" id="form">
-        <div>
-            <p>Ce médicament est à prendre:</p>
+    <div class="align_well" id="form">
+        <div class="align_row">
+            <div>
+                <p>Ce médicament est à prendre:</p>
+            </div>
+            <div>
+                <p>
+                    <input type="checkbox" name="moment" id="matin" /> <label for="matin">Matin</label><br>
+                    <input type="checkbox" name="moment" id="midi" /> <label for="midi">Midi</label><br>
+                    <input type="checkbox" name="moment" id="soir" /> <label for="soir">Soir</label><br>
+                </p>
+            </div>
         </div>
-
-        <div>
-            <p>
-                <input type="checkbox" name="moment" id="matin" /> <label for="matin">Matin</label><br>
-                <input type="checkbox" name="moment" id="midi" /> <label for="midi">Midi</label><br>
-                <input type="checkbox" name="moment" id="soir" /> <label for="soir">Soir</label><br>
-            </p>
+        <div class="align_row">
+            <div>
+                <p>par voie</p>
+            </div>
+            <div>
+                <p>
+                    <input type="radio" name="voie" value="veineuse" id="veineuse" /> <label for="veineuse">Veineuse</label><br>
+                    <input type="radio" name="voie" value="intramusculaire" id="intramusculaire" /> <label for="intramusculaire">Intramusculaire</label><br>
+                    <input type="radio" name="voie" value="sous-cutannée" id="sous-cutannée" /> <label for="sous-cutannée">Sous-cutannée</label><br>
+                    <input type="radio" name="voie" value="orale" id="orale" /> <label for="orale">Orale</label><br>
+                    <input type="radio" name="voie" value="rectale" id="rectale" /> <label for="rectale">Rectale</label><br>
+                    <input type="radio" name="voie" value="" id="none" /> <label for="none">Non-spécifié</label><br>
+                </p>
+            </div>
+            <div>
+                <p>
+                    <input type="radio" name="position_repas" value="avant les repas" id="avant_repas" /> <label for="avant_repas">Avant les repas</label><br>
+                    <input type="radio" name="position_repas" value="après les repas" id="apres_repas" /> <label for="apres_repas">Après les repas</label><br>
+                    <input type="radio" name="position_repas" value="" id="peu_importe" /> <label for="peu_importe">Peu importe</label><br>
+                </p>
+            </div>
         </div>
-        
         <div>
-            <p>par voie</p>
+            <a class="red accent-4 waves-effect waves-light btn" id="dire"> Dire <i class="material-icons right">volume_up</i></a>
         </div>
-        <div>
-            <p>
-                <input type="radio" name="voie" value="veineuse" id="veineuse" /> <label for="veineuse">Veineuse</label><br>
-                <input type="radio" name="voie" value="intramusculaire" id="intramusculaire" /> <label for="intramusculaire">Intramusculaire</label><br>
-                <input type="radio" name="voie" value="sous-cutannée" id="sous-cutannée" /> <label for="sous-cutannée">Sous-cutannée</label><br>
-                <input type="radio" name="voie" value="orale" id="orale" /> <label for="orale">Orale</label><br>
-                <input type="radio" name="voie" value="rectale" id="rectale" /> <label for="rectale">Rectale</label><br>
-                <input type="radio" name="voie" value="" id="none" /> <label for="none">Non-spécifié</label><br>
-            </p>
-        </div>
-
-        <div>
-            <p>
-                <input type="radio" name="position_repas" value="avant les repas" id="avant_repas" /> <label for="avant_repas">Avant les repas</label><br>
-                <input type="radio" name="position_repas" value="après les repas" id="apres_repas" /> <label for="apres_repas">Après les repas</label><br>
-                <input type="radio" name="position_repas" value="" id="peu_importe" /> <label for="peu_importe">Peu importe</label><br>
-            </p>
-        </div>
-        
-        <div><button id="dire">Dire</button></div>
-
     </div>
+
 
     <div id='bottom'>
         <img alt="parm" src="img/phram.png">
@@ -62,9 +96,34 @@
 
     <div id='space'></div>
 
-    <div id='bottom'>
-        <p>Built with <span style="color: red">❤</span> by Paul Dubois</p>
-    </div>
+
+
+    <footer class="red page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Pharmasay</h5>
+                    <p class="grey-text text-lighten-4">Pharmasay parle à la place des pharmaciens paresseux.</p>
+                </div>
+                <!-- addional links can be added -->
+                <!-- <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Links</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                    </ul>
+                </div> -->
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2018 Built with ❤ by Paul Dubois
+                <a class="grey-text text-lighten-4 right" href="https://github.com/pauldubois98/pharmasay">View code on GitHub</a>
+            </div>
+        </div>
+    </footer>
 
 
 
