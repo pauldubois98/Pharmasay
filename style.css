@@ -10,31 +10,34 @@ p{
 
 
 .img{
-    width: 30%;
+    width: 100%;
+    max-width: 15em;
+}
+.logo{
+    height: 4rem;
 }
 
-
-#dire{
-    width: 4em;
-    height: 1.7em;
-    font-size: 1.5em;
-    color: white;
-    background-color: red;
-}
-
-#top{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-
-#form{
+.align_well{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
 }
+@media (max-width: 840px){
+    .align_well{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.align_row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
 
 #bottom{
     display: flex;
